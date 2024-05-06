@@ -1,0 +1,90 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(180, 196, 209);
+    text-align: center;
+    align-items: center;
+}
+
+.blue {
+    color: #0077b6;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blue {
+    color: #0096c7;
+    font-size: 28px;
+}
+
+.red {
+    color: #b6001e;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.red {
+    color: #c70000;
+    font-size: 28px;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+    left:550px;
+    text-align: start;
+}
+
+li {
+    background-color: rgb(143, 172, 198);
+    border: 1px solid #dddddd;
+    margin: 5px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+#submit{
+    background-color: rgb(64, 62, 62);
+    margin : 10px;
+    border-radius: 5px;
+    color:white;
+}
+
+#myList{
+    width:150px;
+}
+
+#check{
+    transform: scale(1.5); 
+    margin-right: 10px;
+}
+
+#inputtask{
+    width:150px;
+    margin-left:20px;
+}
+
+#heading{
+    position: relative;
+    left:420px;
+    background-color: rgb(148, 177, 203);
+    width: 400px;
+}
+
+input:checked+p{
+    text-decoration: line-through;
+}
+
+p{
+    display: inline-block;
+}

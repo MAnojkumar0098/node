@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="heading">
+    <% if(dayvar=='saturday' || dayvar=='sunday') {%>
+    <h1 class="red">Its a <%= dayvar %></h1>
+    <%} else     {%>
+    <h2 class="blue">Its a <%= dayvar %></h2>
+    <% } %>
+    </div>
+        <ul id="myList">
+            <%for(var i=0;i<newtask.length;i++){%>
+                <label>
+                <li type="none"><input id='check' type='checkbox' name="tasks"><p><%=newtask[i]%></p></li>
+                </label>
+           <% }%>
+            </ul>
+        <form action="/home" method="post"> <input id='inputtask' type='text' placeholder='add new task'name="addtask"><input id='submit' type='submit'></form>
+</body>
+</html>

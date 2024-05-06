@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>random number is <%=num%></h1>
+    <%= 1+4 %>           <!-- we should write any expr and strings and vars in this -->
+    <% if(num%2==0){ %>  <!-- we should write js inside it! -->
+        <h1 style="color:rgb(70, 182, 70)"><%=num%> is even </h2>
+    <%} else { %>
+        <h1 style="color:darkgreen"><%=num%> is odd</h1>
+        <% } %>
+
+ </body>
+</html>
